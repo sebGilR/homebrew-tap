@@ -5,21 +5,21 @@
 class Aidw < Formula
   desc "Portable Claude + GitHub Copilot workflow kit for VS Code workspaces"
   homepage "https://github.com/sebGilR/ai-dev-workflow"
-  version "0.1.9"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.1.9/ai-dev-workflow_0.1.9_Darwin_x86_64.tar.gz"
-      sha256 "d1403c1ff9c716a9260cba8e2290473405d380e6c81c5eec2c427535e1e65651"
+      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.2.0/ai-dev-workflow_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "272d3b68822215a75a509f71973008ff40d3a8725122a3a36db59fc58d8d15ab"
 
       define_method(:install) do
         bin.install "aidw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.1.9/ai-dev-workflow_0.1.9_Darwin_arm64.tar.gz"
-      sha256 "475d23e44ad368ef444234884ab525de5f9fa53adde8f69598d183c24e3a2dae"
+      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.2.0/ai-dev-workflow_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "fa3fa2a0a29aed4a54e38004b94a90c0c95fc8b8f3089de37759fe76b3e78ff5"
 
       define_method(:install) do
         bin.install "aidw"
@@ -29,15 +29,15 @@ class Aidw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.1.9/ai-dev-workflow_0.1.9_Linux_x86_64.tar.gz"
-      sha256 "2b4eb797684940f149da79669d31fd4da37d0772a996e65a146184a85d633bf9"
+      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.2.0/ai-dev-workflow_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "ba6fb137c2ba663639e6df0d85d1123ad5b4450ee409f1bab92fe979cd343b94"
       define_method(:install) do
         bin.install "aidw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.1.9/ai-dev-workflow_0.1.9_Linux_arm64.tar.gz"
-      sha256 "348029c6940dbeb7f16965a044200febf228b2ae38d1a39ace1fc5fce0b25696"
+      url "https://github.com/sebGilR/ai-dev-workflow/releases/download/v0.2.0/ai-dev-workflow_0.2.0_Linux_arm64.tar.gz"
+      sha256 "9ba6f08c5d9629b9ea11eef73e95c25f7a7af03a8ab83b3f4a6b84e3a367a939"
       define_method(:install) do
         bin.install "aidw"
       end
